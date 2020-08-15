@@ -17,9 +17,7 @@ var scoreOfFilm1 = prompt('How much do you rate it?', '');
 var nameOfFilm2 = prompt('One of the most recently viewed movies?', '');
 var scoreOfFilm2 = prompt('How much do you rate it?', '');
 
-var movies = {};
+personalMovieDB.movies[nameOfFilm1] = scoreOfFilm1;
+personalMovieDB.movies[nameOfFilm2] = scoreOfFilm2;
 
-movies[nameOfFilm1] = scoreOfFilm1;
-movies[nameOfFilm2] = scoreOfFilm2;
-
-console.log(movies);
+console.log(personalMovieDB.movies);
