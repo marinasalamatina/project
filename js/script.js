@@ -1,6 +1,25 @@
 "use strict";
 
-const isChecked = 1,
-      isClose = 1;
+var numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-console.log(2+2*2 !== '6');
+console.log(numberOfFilms);
+
+var personalMovieDB = {
+        count: numberOfFilms,
+        movies: {},
+        actors: {},
+        genres: [],
+        privat: false
+};
+
+var nameOfFilm1 = prompt('One of the most recently viewed movies?', '');
+var scoreOfFilm1 = prompt('How much do you rate it?', '');
+var nameOfFilm2 = prompt('One of the most recently viewed movies?', '');
+var scoreOfFilm2 = prompt('How much do you rate it?', '');
+
+var movies = {};
+
+movies[nameOfFilm1] = scoreOfFilm1;
+movies[nameOfFilm2] = scoreOfFilm2;
+
+console.log(movies);
