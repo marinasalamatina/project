@@ -1,53 +1,39 @@
 "use strict";
 
-var numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-
-console.log(numberOfFilms);
-
-var personalMovieDB = {
-        count: numberOfFilms,
-        movies: {},
-        actors: {},
-        genres: [],
-        privat: false
-};
-
-var nameOfFilm1 = prompt('One of the most recently viewed movies?', '');
-var scoreOfFilm1 = prompt('How much do you rate it?', '');
-var nameOfFilm2 = prompt('One of the most recently viewed movies?', '');
-var scoreOfFilm2 = prompt('How much do you rate it?', '');
-
-if (nameOfFilm1 == '' || nameOfFilm1.length > 50) {
-    console.log(nameOfFilm1.length);
-    var nameOfFilm1 = prompt('One of the most recently viewed movies?', '');
-}
-
-if (scoreOfFilm1 == '') {
-    var scoreOfFilm1 = prompt('How much do you rate it?', '');
-}
-
-if (nameOfFilm2 == '' || nameOfFilm2.length > 50) {
-    var nameOfFilm2 = prompt('One of the most recently viewed movies?', '');
-}
-
-if (scoreOfFilm2 == '') {
-    var scoreOfFilm2 = prompt('How much do you rate it?', '');
-}
-
-if (personalMovieDB.count <= 10) {
-    alert('Просмотрено довольно мало фильмов');
-} else if (10 > personalMovieDB.count <= 30) {
-    alert('Вы классический зритель');
-} else if (personalMovieDB.count > 30) {
-    alert('Вы киноман');
-} else {
-    alert('Произошла ошибка');
-}
-
-personalMovieDB.movies[nameOfFilm1] = scoreOfFilm1;
-personalMovieDB.movies[nameOfFilm2] = scoreOfFilm2;
-
-console.log(personalMovieDB.movies);
+//var numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//
+//var personalMovieDB = {
+//        count: numberOfFilms,
+//        movies: {},
+//        actors: {},
+//        genres: [],
+//        privat: false
+//};
+//
+//console.log(personalMovieDB.count);
+//
+//if (personalMovieDB.count <= 10 && personalMovieDB.count !== 0 && personalMovieDB.count !== null) {
+//    console.log('Просмотрено довольно мало фильмов');
+//} else if (personalMovieDB.count > 10 && personalMovieDB.count <= 30) {
+//    console.log('Вы классический зритель');
+//} else if (personalMovieDB.count > 30) {
+//    console.log('Вы киноман');
+//} else {
+//    console.log('Произошла ошибка');
+//}
+//
+//for (var i = 0; i < 2; i += 1) {
+//    var nameOfFilm = prompt('Один из последних просмотренных фильмов?', '');
+//    var scoreOfFilm = prompt('Насколько вы его оцениваете?', '');
+//
+//    if (nameOfFilm !== null && nameOfFilm !== null && nameOfFilm !== '' && nameOfFilm.length < 50 && nameOfFilm !== '' && nameOfFilm.length < 50) {
+//        personalMovieDB.movies[nameOfFilm] = scoreOfFilm;
+//    } else {
+//        i--;
+//    }
+//}
+//
+//console.log(personalMovieDB.movies);
 
 //if (0) {
 //  console.log('Ok');
@@ -107,3 +93,4 @@ console.log(personalMovieDB.movies);
 //    }
 //    console.log(i);
 //}
+
