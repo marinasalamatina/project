@@ -121,20 +121,20 @@
 //                             Объекты, деструктуризация объектов
 
 
-const options = {
-    name: 'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    },
-    makeTest: function () {
-        console.log('Test');
-    }
-};
-
-options.makeTest();
+//const options = {
+//    name: 'test',
+//    width: 1024,
+//    height: 1024,
+//    colors: {
+//        border: 'black',
+//        bg: 'red'
+//    },
+//    makeTest: function () {
+//        console.log('Test');
+//    }
+//};
+//
+//options.makeTest();
 
 //console.log(options.name);
 //console.log(options.colors.border);
@@ -161,5 +161,5 @@ options.makeTest();
 
 //                                               ДЕСТРУКТУРИЗАЦИЯ
 
-const {border, bg} = options.colors;
-console.log(border);
+//const {border, bg} = options.colors;
+//console.log(border);
