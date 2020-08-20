@@ -1,40 +1,5 @@
 "use strict";
 
-//var numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-//
-//var personalMovieDB = {
-//        count: numberOfFilms,
-//        movies: {},
-//        actors: {},
-//        genres: [],
-//        privat: false
-//};
-//
-//console.log(personalMovieDB.count);
-//
-//if (personalMovieDB.count <= 10 && personalMovieDB.count !== 0 && personalMovieDB.count !== null) {
-//    console.log('Просмотрено довольно мало фильмов');
-//} else if (personalMovieDB.count > 10 && personalMovieDB.count <= 30) {
-//    console.log('Вы классический зритель');
-//} else if (personalMovieDB.count > 30) {
-//    console.log('Вы киноман');
-//} else {
-//    console.log('Произошла ошибка');
-//}
-//
-//for (var i = 0; i < 2; i += 1) {
-//    var nameOfFilm = prompt('Один из последних просмотренных фильмов?', '');
-//    var scoreOfFilm = prompt('Насколько вы его оцениваете?', '');
-//
-//    if (nameOfFilm !== null && nameOfFilm !== null && nameOfFilm !== '' && nameOfFilm.length < 50 && nameOfFilm !== '' && nameOfFilm.length < 50) {
-//        personalMovieDB.movies[nameOfFilm] = scoreOfFilm;
-//    } else {
-//        i--;
-//    }
-//}
-//
-//console.log(personalMovieDB.movies);
-
 //if (0) {
 //  console.log('Ok');
 //} else {
@@ -94,3 +59,21 @@
 //    console.log(i);
 //}
 
+//const fruit = 'Some fruit';
+//console.log(fruit.indexOf('f'));
+//
+//const logg = "Hello world";
+//console.log(logg.slice(6, 11));
+//console.log(logg.slice(3));
+//console.log(logg.slice(-9, -1));
+//
+//console.log(logg.substring(5, 8));
+//
+//console.log(logg.substr(6, 3));
+//
+//const num = 12.2;
+//console.log(Math.round(num));
+//
+//const test = '12.2px';
+//console.log(parseInt(test));
+//console.log(parseFloat(test));
