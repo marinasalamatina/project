@@ -77,3 +77,89 @@
 //const test = '12.2px';
 //console.log(parseInt(test));
 //console.log(parseFloat(test));
+
+
+
+
+
+//                              КОЛБЭКИ
+//function first () {
+//    // Do something
+//    setTimeout(function() {
+//        console.log(1);
+//    }, 1500);
+//}
+//
+//function second () {
+//    console.log(2);
+//}
+//
+//first();
+//second();
+//
+//function learnJS(lang, callback) {
+//    console.log(`Я учу: ${lang}`);
+//    callback();
+//}
+//
+//function done () {
+//    setTimeout(function() {
+//    console.log('Я прошел этот урок!');
+//    }, 1500);
+//}
+//
+//learnJS('JavaScript', done);
+
+
+
+
+
+
+
+
+
+//                             Объекты, деструктуризация объектов
+
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function () {
+        console.log('Test');
+    }
+};
+
+options.makeTest();
+
+//console.log(options.name);
+//console.log(options.colors.border);
+
+//delete options.name;
+
+//console.log(options);
+
+//et counter = 0;
+//
+//or (let key in options) {
+//   counter++;
+//   if (typeof(options[key]) === 'object') {
+//       for (let i in options[key]) {
+//           console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//       }
+//   } else {
+//       console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//   }
+//   console.log(counter);
+//
+
+//console.log(Object.keys(options).length);
+
+//                                               ДЕСТРУКТУРИЗАЦИЯ
+
+const {border, bg} = options.colors;
+console.log(border);
