@@ -1,103 +1,91 @@
 "use strict";
 
-//let numberOfFilms;
-//
-//function start () {
-//    numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
-//
-//    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
-//        numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
-//    }
-//}
-//
-//start();
-//
 //var personalMovieDB = {
-//        count: numberOfFilms,
+//        count: 0,
 //        movies: {},
 //        actors: {},
 //        genres: [],
-//        privat: false
+//        privat: false,
+//        start: function () {
+//            this.count = prompt('Сколько фильмов вы уже посмотрели?', '');
+//        
+//            while (this.count == '' || this.count == null || isNaN(this.count)) {
+//                this.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//            }
+//        },
+//        showMyDB: function (hidden) {
+//            if (!hidden) {
+//                console.log(personalMovieDB);
+//            }
+//            this.toggleVisibleMyDB();
+//        },
+//        writeYourGenres: function () {
+//            //for (var i = 0; i < 3; i += 1) {
+//            //    var genre = prompt(`Ваш любимый жанр под номером ${i + 1}`, '');
+//            //    if (genre !== null && genre !== '') {
+//            //        this.genres[i] = genre;
+//            //    } else {
+//            //        i--;
+//            //        console.log('Ответь на вопрос!');
+//            //    }
+//            //}
+//
+//            for (var i = 0; i < 1; i += 1) {
+//                let genres = prompt(`Введите ваши любимые жанры через запятую`).toLowerCase();
+//                if (genres === null || genres === '') {
+//                    i--;
+//                    console.log('Ответь на вопрос!');
+//                } else {
+//                    this.genres = genres.split(',');
+//                    this.genres.sort();
+//                }
+//            }
+//            console.log(this.genres);
+//            this.genres.forEach((element, i) => {
+//                console.log(`Любимый жанр: ${(i+1)} = это ${element}`);
+//            });
+//        },
+//        rememberMyFilms: function () {
+//            for (var i = 0; i < 2; i += 1) {
+//                var nameOfFilm = prompt('Один из последних просмотренных фильмов?', '');
+//                var scoreOfFilm = prompt('Насколько вы его оцениваете?', '');
+//            
+//                if (nameOfFilm !== null && nameOfFilm !== '' &&
+//                nameOfFilm.length < 50 && nameOfFilm !== '') {
+//                    this.movies[nameOfFilm] = scoreOfFilm;
+//                } else {
+//                    i--;
+//                }
+//            }
+//        },
+//        detectPersonalLevel: function () {
+//            if (this.count <= 10 && this.count !== 0 &&
+//                this.count !== null) {
+//                console.log('Просмотрено довольно мало фильмов');
+//            } else if (this.count > 10 && this.count <= 30) {
+//                console.log('Вы классический зритель');
+//            } else if (this.count > 30) {
+//                console.log('Вы киноман');
+//            } else {
+//                console.log('Произошла ошибка');
+//            }
+//        },
+//        toggleVisibleMyDB: function () {
+//            console.log('Пока: ' + this.privat, 'ПРОВЕРКА ОБЩАЯ');
+//            if (!this.privat) {
+//                this.privat = true;
+//            } else {
+//                this.privat = false;
+//            }
+//        }
 //};
 //
 //console.log(personalMovieDB.count);
 //
-//function showMyDB (hidden) {
-//    if (!hidden) {
-//        console.log(personalMovieDB);
-//    }
-//}
+//personalMovieDB.start();
+//personalMovieDB.showMyDB(personalMovieDB.privat);
+//personalMovieDB.writeYourGenres();
+//personalMovieDB.rememberMyFilms();
+//personalMovieDB.detectPersonalLevel();
 //
-//showMyDB(personalMovieDB.privat);
-//
-//function writeYourGenres () {
-//    for (var i = 0; i < 3; i += 1) {
-//        var genre = prompt(`Ваш любимый жанр под номером ${i + 1}`, '');
-//        personalMovieDB.genres[i] = genre;
-//    }
-//    console.log(personalMovieDB.genres);
-//}
-//
-//writeYourGenres();
-//
-//function rememberMyFilms () {
-//    for (var i = 0; i < 2; i += 1) {
-//        var nameOfFilm = prompt('Один из последних просмотренных фильмов?', '');
-//        var scoreOfFilm = prompt('Насколько вы его оцениваете?', '');
-//    
-//        if (nameOfFilm !== null && nameOfFilm !== null && nameOfFilm !== '' &&
-//        nameOfFilm.length < 50 && nameOfFilm !== '') {
-//            personalMovieDB.movies[nameOfFilm] = scoreOfFilm;
-//        } else {
-//            i--;
-//        }
-//    }
-//}
-//
-//rememberMyFilms();
-//
-//function detectPersonalLevel () {
-//    if (personalMovieDB.count <= 10 && personalMovieDB.count !== 0 &&
-//        personalMovieDB.count !== null) {
-//        console.log('Просмотрено довольно мало фильмов');
-//    } else if (personalMovieDB.count > 10 && personalMovieDB.count <= 30) {
-//        console.log('Вы классический зритель');
-//    } else if (personalMovieDB.count > 30) {
-//        console.log('Вы киноман');
-//    } else {
-//        console.log('Произошла ошибка');
-//    }
-//}
-//
-//detectPersonalLevel();
-
-//                        Основы ООП, ПРОТОТИПНО-ОРИЕНТИРОВАННОЕ НАСЛЕДОВАНИЕ               
-
-//let str = "some";
-//let strObj = new String(str);
-//
-//console.log(typeof(str));
-//console.log(typeof(strObj));
-
-//console.dir([1,2,3]);
-
-//const soldier = {
-//    health: 400,
-//    armor: 100,
-//    sayHello: function()
-//    {
-//        console.log('Hello!')
-//    }
-//};
-//
-//    const john = Object.create(soldier);
-////    устаревший формат
-//
-////john.__proto__ = soldier;
-//
-////    свежий формат
-//
-//Object.setPrototypeOf(john, soldier);
-//
-//john.sayHello();
-//console.log(john.health);
+//console.log('А сейчас: ' + personalMovieDB.privat);
